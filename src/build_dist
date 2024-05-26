@@ -5,5 +5,6 @@ export DIST_PATH="${DIR}"
 CUSTOM_PI_OS_PATH=$(<"${DIR}"/custompios_path)
 export CUSTOM_PI_OS_PATH
 export PATH=$PATH:$CUSTOM_PI_OS_PATH
+export TEMPDIR=$RUNNER_TEMP
 
 "${CUSTOM_PI_OS_PATH}"/build_custom_os "$@"
